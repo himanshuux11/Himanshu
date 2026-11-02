@@ -35,7 +35,7 @@ notify = "8"
 # A real libsqlite3 is not optional here: goose's sessions.db main file contains
 # ZERO tables, with all 1.25 MB of schema and rows in an uncheckpointed -wal.
 # Anything that parses the main file directly reads an empty database.
-rusqlite = { version = "0.40", features = ["bundled"] }
+rusqlite = { version = "0.41", features = ["bundled"] }
 time = { version = "0.3", default-features = false, features = ["std", "formatting", "macros"] }
 
 [dev-dependencies]
